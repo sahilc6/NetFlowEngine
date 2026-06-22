@@ -49,6 +49,7 @@ User Traffic (PCAP) ──► [DPI Engine] ──► Filtered Traffic (PCAP)
 
 When you visit a website, data travels through multiple "layers":
 
+```text
 ┌─────────────────────────────────────────────────────────┐
 │ Layer 7: Application │ HTTP, TLS (HTTPS), DNS │
 ├─────────────────────────────────────────────────────────┤
@@ -58,11 +59,13 @@ When you visit a website, data travels through multiple "layers":
 ├─────────────────────────────────────────────────────────┤
 │ Layer 2: Data Link │ MAC addresses (local network)│
 └─────────────────────────────────────────────────────────┘
+```
 
 ### A Packet's Structure
 
 Every network packet is structured with headers wrapping inside headers:
 
+```text
 ┌──────────────────────────────────────────────────────────────────┐
 │ Ethernet Header (14 bytes) │
 │ ┌──────────────────────────────────────────────────────────────┐ │
@@ -76,6 +79,7 @@ Every network packet is structured with headers wrapping inside headers:
 │ │ └──────────────────────────────────────────────────────────┘ │ │
 │ └──────────────────────────────────────────────────────────────┘ │
 └──────────────────────────────────────────────────────────────────┘
+```
 
 ### The Five-Tuple
 
