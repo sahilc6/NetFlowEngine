@@ -51,13 +51,13 @@ When you visit a website, data travels through multiple "layers":
 
 ```text
 ┌─────────────────────────────────────────────────────────┐
-│ Layer 7: Application │ HTTP, TLS (HTTPS), DNS │
+│ Layer 7: Application │ HTTP, TLS (HTTPS), DNS           │
 ├─────────────────────────────────────────────────────────┤
-│ Layer 4: Transport │ TCP (reliable), UDP (fast) │
+│ Layer 4: Transport │ TCP (reliable), UDP (fast)         │
 ├─────────────────────────────────────────────────────────┤
-│ Layer 3: Network │ IP addresses (routing) │
+│ Layer 3: Network │ IP addresses (routing)               │
 ├─────────────────────────────────────────────────────────┤
-│ Layer 2: Data Link │ MAC addresses (local network)│
+│ Layer 2: Data Link │ MAC addresses (local network)      │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -67,14 +67,14 @@ Every network packet is structured with headers wrapping inside headers:
 
 ```text
 ┌──────────────────────────────────────────────────────────────────┐
-│ Ethernet Header (14 bytes) │
+│ Ethernet Header (14 bytes)                                       │
 │ ┌──────────────────────────────────────────────────────────────┐ │
-│ │ IP Header (20 bytes) │ │
+│ │ IP Header (20 bytes)                                         │ │
 │ │ ┌──────────────────────────────────────────────────────────┐ │ │
-│ │ │ TCP Header (20 bytes) │ │ │
+│ │ │ TCP Header (20 bytes)                                    │ │ │
 │ │ │ ┌──────────────────────────────────────────────────────┐ │ │ │
-│ │ │ │ Payload (Application Data) │ │ │ │
-│ │ │ │ e.g., TLS Client Hello with SNI │ │ │ │
+│ │ │ │ Payload (Application Data)                           │ │ │ │
+│ │ │ │ e.g., TLS Client Hello with SNI                      │ │ │ │
 │ │ │ └──────────────────────────────────────────────────────┘ │ │ │
 │ │ └──────────────────────────────────────────────────────────┘ │ │
 │ └──────────────────────────────────────────────────────────────┘ │
@@ -450,10 +450,10 @@ After processing a PCAP file, the system prints a comprehensive report summarizi
 ╔══════════════════════════════════════════════════════════════╗
 ║                      PROCESSING REPORT                       ║
 ╠══════════════════════════════════════════════════════════════╣
-║ Total Packets:              77                             ║
-║ Forwarded:                  71                             ║
-║ Dropped:                     6                             ║
-║ Active Flows:               27                             ║
+║ Total Packets:              77                               ║
+║ Forwarded:                  71                               ║
+║ Dropped:                     6                               ║
+║ Active Flows:               27                               ║
 ╠══════════════════════════════════════════════════════════════╣
 ║                    APPLICATION BREAKDOWN                     ║
 ╠══════════════════════════════════════════════════════════════╣
